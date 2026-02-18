@@ -3,20 +3,20 @@ import React from 'react'
 import { motion } from "framer-motion";
 export default function HowIsItWork() {
     return (
-        <section className="py-30 px-15 bg-[#211918] ">
-            <div className='max-w-10/12 mx-auto'>
-                <div className="grid grid-cols-2 gap-20 items-center">
+        <section className="pt-72 md:py-25 px-15 bg-[#211918] ">
+            <div className=' md:max-w-10/12 md:mx-auto'>
+                <div className="flex flex-col-reverse md:flex-row justify-around md:gap-80 items-center">
 
-                    <div>
-                        <div className="flex items-center gap-4 mb-16">
+                    <div className='mt-35 md:mt-0 md:-ml-20'>
+                        <div className="flex items-center gap-4 mb-8 mt-10 md:mt-0 md:mb-16">
                             <span className="inline-block w-8 h-px bg-[#B8933A]"></span>
                             <span className="text-lg tracking-widest uppercase text-[#B8933A]">How It Works</span>
 
                         </div>
 
                         <div className=" mb-10">
-                            <h2 className="font-serif text-[clamp(38px,4vw,60px)] font-light leading-[1.05] text-[#f5efe3] mb-6">
-                                Exchange is <br />
+                            <h2 className="font-serif text-4xl font-light leading-[1.05] text-[#f5efe3] mb-6">
+                                Exchange is <br className='hidden md:block' />
                                 as easy as <br />
                                 <em className="italic text-[#d4aa56]">turning a page.</em>
                             </h2>
