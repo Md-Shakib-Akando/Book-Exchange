@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Hero from "./components/hero/page";
 import Marquee from "./components/marquee/page";
+import OfferCard from "./components/OfferCard/page";
 
 export default function Home() {
   return (
     <div>
       <Hero></Hero>
       <Marquee></Marquee>
+      <OfferCard></OfferCard>
     </div>
   );
 }
