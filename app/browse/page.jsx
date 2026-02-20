@@ -1,7 +1,8 @@
 import React from 'react'
+import BrowseView from '../components/browseView/page'
 
-export default function Browse() {
+export default function BrowsePage() {
     return (
-        <div>Browse</div>
+        <BrowseView></BrowseView>
     )
 }

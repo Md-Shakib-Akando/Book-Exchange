@@ -26,7 +26,7 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest text-white">
-                        <Link href="#browse" className="hover:text-yellow-500 transition">
+                        <Link href="/browse" className="hover:text-yellow-500 transition">
                             Browse
                         </Link>
 
