@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function OfferCard() {
     return (
-        <section className="py-22 px-16 relative bg-[#1b1210]" >
-            <div className='max-w-10/12 mx-auto'>
+        <section className="py-22 px-6 md:px-10 relative bg-[#1b1210]" >
+            <div className='md:max-w-10/12 md:mx-auto'>
 
                 <div className="flex items-center gap-4 mb-16">
                     <span className="inline-block w-8 h-px bg-[#B8933A]"></span>

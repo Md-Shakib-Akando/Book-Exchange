@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function Hero() {
     return (
         <section className="bg-[radial-gradient(circle_at_bottom_right,#2b1f1b_20%,#1e1512_50%)] pt-38 pb-26 overflow-hidden ">
-            <div className=" md:max-w-10/12 md:mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
+            <div className=" md:max-w-10/12 md:mx-auto px-6  grid md:grid-cols-2 gap-16 items-center">
 
 
                 <div className="text-center md:text-left">

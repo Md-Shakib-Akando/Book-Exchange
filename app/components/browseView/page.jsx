@@ -60,7 +60,7 @@ export default function BrowseView() {
     return (
         <div className="min-h-screen pt-20 bg-[#1b1410] text-[#f5efe3] ">
 
-            <div className="md:max-w-10/12 md:mx-auto flex">
+            <div className="xl:max-w-10/12 xl:mx-auto  flex">
                 <aside className={`${sidebarOpen ? "w-72 p-8" : "w-0 p-0"} transition-all duration-300 overflow-hidden  bg-white/5`}>
                     <div className="space-y-8">
 
@@ -124,7 +124,7 @@ export default function BrowseView() {
                     </div>
 
                     {view === "grid" ? (
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
+                        <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-2">
                             {paginated.map(book => (
                                 <div key={book.id} className="relative aspect-3/4 group overflow-hidden">
 
@@ -199,10 +199,11 @@ export default function BrowseView() {
                 </main>
 
                 {modal && (
-                    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-                        <div className="bg-[#221a12] border border-[#b8933a]/40 p-10 w-105 relative">
+                    <div className="fixed inset-0 bg-black/80 flex items-center justify-center  z-50">
+                        <div className="bg-[#221a12] border border-[#b8933a]/40 p-8 w-full max-w-xl
+                max-h-[95vh] overflow-y-auto relative">
 
-                            <button onClick={() => setModal(null)} className="absolute top-3 right-3 text-xl">"×"</button>
+                            <button onClick={() => setModal(null)} className="absolute top-3 right-3 text-xl">×</button>
 
                             <div className={`h-56 mb-6 bg-gradient-to-br ${modal.color}`} />
 

@@ -3,9 +3,9 @@ import React from 'react'
 import { motion } from "framer-motion";
 export default function HowIsItWork() {
     return (
-        <section className="pt-72 md:py-25 px-15 bg-[#211918] ">
-            <div className=' md:max-w-10/12 md:mx-auto'>
-                <div className="flex flex-col-reverse md:flex-row justify-around md:gap-80 items-center">
+        <section className="pt-72 lg:py-25 px-15 bg-[#211918] ">
+            <div className=' md:max-w-10/12 md:mx-auto '>
+                <div className="flex flex-col-reverse lg:flex-row justify-around md:gap-60 items-center">
 
                     <div className='mt-35 md:mt-0 md:-ml-20'>
                         <div className="flex items-center gap-4 mb-8 mt-10 md:mt-0 md:mb-16">

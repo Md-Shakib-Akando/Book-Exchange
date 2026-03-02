@@ -3,6 +3,7 @@ import Hero from "./components/hero/page";
 import Marquee from "./components/marquee/page";
 import OfferCard from "./components/OfferCard/page";
 import HowIsItWork from "./components/HowIsItWork/page";
+import ReviewSection from "./components/Review/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Marquee></Marquee>
       <OfferCard></OfferCard>
       <HowIsItWork></HowIsItWork>
+      <ReviewSection></ReviewSection>
     </div>
   );
 }
