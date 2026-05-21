@@ -22,11 +22,30 @@ export default function SignupForm({ form, setForm, loading, onSubmit, setMode }
     const passwordsMatch = form.password && form.password === form.confirmPassword;
     const strength = getStrength(form.password);
 
+    const handleRegister = async () => {
+        try {
+            const res = await fetch("/api/register", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(form),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) throw new Error(data.message);
+
+            alert("Account created!");
+            setMode("login");
+        } catch (err) {
+            alert(err.message);
+        }
+    };
+
     return (
         <form
             onSubmit={(e) => {
                 e.preventDefault();
-                onSubmit();
+                handleRegister();
             }}
             className="space-y-6"
         >

@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar/page";
-import Footer from "./components/Footer/page";
+
+import ConditionalLayout from "./components/ConditionalLayout";
+import { AuthProvider } from "./context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Folio - Book Exchange",
-  description: "A community-driven platform for book lovers to exchange their favorite reads.",
+  description: "A community-driven platform for book lovers to exchange their favorite reads.J",
 };
 
 export default function RootLayout({ children }) {
@@ -24,9 +25,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+        <AuthProvider>
+          <ConditionalLayout>
+            {children}
+          </ConditionalLayout>
+        </AuthProvider>
       </body>
     </html>
   );

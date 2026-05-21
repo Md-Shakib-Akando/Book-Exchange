@@ -4,12 +4,10 @@ import { useState } from "react";
 export default function LoginForm({ form, setForm, loading, onSubmit, setMode }) {
     const [showPass, setShowPass] = useState(false);
 
+
     return (
         <form
-            onSubmit={(e) => {
-                e.preventDefault();
-                onSubmit();
-            }}
+            onSubmit={onSubmit}
             className="space-y-6 "
         >
 
