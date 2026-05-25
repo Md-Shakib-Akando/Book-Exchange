@@ -53,7 +53,7 @@ export async function POST(req) {
 
         await Book.create({
             ...body,
-            owner: decoded.id,        // 🔥 must
+            owner: decoded.id,        //  must
             ownerEmail: decoded.email,
             status: "available"
             // optional but fine
